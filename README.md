@@ -1,5 +1,5 @@
-#Silent Moon
+# Silent Moon
 A website for a meditation App.
 
-##Contributing
+## Contributing
 Feel free to suggest improvements
