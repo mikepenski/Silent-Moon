@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+    
+    <header>
+        <a href="#" class="logo">
+            <span>Silent</span>
+            <img src="assets/img/logo.png" alt="logo">
+            <span>Moon</span>
+        </a>
+
+        <div class="button_container" id="toggle" role="button" data-toggle="collapse" data-target="#menu-main-navigation" aria-expanded="false">
+            <span class="top"></span>
+            <span class="middle"></span>
+            <span class="bottom"></span>
+        </div>
+
+        <nav>
+    
+            <ul class="main-nav">
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+                <li>
+                    <a href="#">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+       <div class="container">
+
+            <div class="content left col">
+
+                <div class="h1">
+                    Welcome to<br />Silent Moon
+                </div>
+
+                <p>Explore the app, Find some peace of mind<br/>to prepare for meditation</p>
+
+                <a href="#" class="btn">Get started</a>
+
+            </div>
+
+            <div class="right col">
+
+                <div class="image">
+
+                    <img src="assets/img/clouds2.png" alt="clouds" class="clouds2" />
+
+                    <img src="assets/img/circle_bg.png" alt="circle" class="circle" />
+
+                    <img src="assets/img/woman_meditating.png" alt="woman" class="meditating" />
+
+                    <img src="assets/img/clouds1.png" alt="clouds" class="clouds1" />
+
+                </div>
+                
+            </div>
+
+       </div>
+        
+    </main>
+
+    <script>
+
+    
+
+        var nav = document.getElementById("toggle").nextElementSibling;
+
+        if(nav.length != 0){
+
+            document.getElementById("toggle").addEventListener("click", function(){
+            this.classList.toggle("active");
+            nav.classList.toggle("active");
+        });
+
+        }
+      
+
+    </script>
+    
+</body>
+</html>
